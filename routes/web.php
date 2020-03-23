@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/hi', function () {
     return "Hi";
 });
+
+Route::get('/hi/{id}', function ($id) {
+    return "Hi $id";
+});
+
+Route::get('/hi/{id}/{name}', function ($id,$name) {
+    return "Hi no $id, name $name";
+});
