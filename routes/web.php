@@ -13,18 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/hi', function () {
-    return "Hi";
-});
+// Route::get('/hi', function () {
+//     return "Hi";
+// });
 
-Route::get('/hi/{id}', function ($id) {
-    return "Hi $id";
-});
+// Route::get('/hi/{id}', function ($id) {
+//     return "Hi $id";
+// });
 
-Route::get('/hi/{id}/{name}', function ($id,$name) {
-    return "Hi no $id, name $name";
-});
+// Route::get('/hi/{id}/{name}', function ($id,$name) {
+//     return "Hi no $id, name $name";
+// });
+
+// Route::get('/post/{id}', 'PostsController@index');
+
+Route::resource('posts','PostsCOntroller');
