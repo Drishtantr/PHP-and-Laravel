@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 // Route::get('/hi', function () {
 //     return "Hi";
@@ -31,4 +31,6 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/post/{id}', 'PostsController@index');
 
-Route::resource('posts','PostsCOntroller');
+Route::resource('/posts','PostsCOntroller');
+
+Route::get('/contact','PostsController@contact');
