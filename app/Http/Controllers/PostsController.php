@@ -89,4 +89,10 @@ class PostsController extends Controller
     {
         return view('contact');
     }
+
+    public function showposts($id,$name,$pw)
+    {
+        // return view('post')->with('id',$id);
+        return view('post',compact('id','name','pw'));
+    }
 }
