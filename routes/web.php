@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::get('/hi', function () {
 //     return "Hi";
@@ -33,7 +33,41 @@ Route::get('/', function () {
 
 // Route::resource('/posts','PostsCOntroller');
 
-Route::get('/contact','PostsController@contact');
+// Route::get('/contact','PostsController@contact');
 
-Route::get('/post/{id}/{name}/{pw}','PostsController@showposts');
+// Route::get('/post/{id}/{name}/{pw}','PostsController@showposts');
+
+// SQL insert update delete etc etc from here
+
+// route::get('/insert',function(){
+
+//     DB::insert('Insert into posts(title,content) values(?,?)',['Apple','Ball']);
+
+// });
+
+
+// route::get('/read',function(){
+
+//    $result= DB::select('select * from posts where id=?',[1]);
+   
+//    foreach($result as $post)
+//    {
+//     return $post->title;
+//    }
+
+// });
+
+// route::get('/update',function(){
+
+//     $updated= DB::update('update posts set title="Apple2" where id=?',[1]);
+//     return $updated;
+ 
+//  });
+
+//  route::get('/delete',function(){
+
+//     $deleted= DB::delete('delete from posts where id=?',[1]);
+//     return $deleted;
+ 
+//  });
 
